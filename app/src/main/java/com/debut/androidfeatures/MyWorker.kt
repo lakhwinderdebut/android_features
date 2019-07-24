@@ -22,7 +22,7 @@ class MyWorker(context: Context, workerParams: WorkerParameters) : Worker(contex
 
     override fun doWork(): Result {
         val data = inputData
-        data.getString(MainActivity.TITLE)?.let { displayNotification(it, "work is finished") }
+        data.getString(Constants.TITLE)?.let { displayNotification(it, "work is finished") }
         val data1 = Data.Builder().putString(SUCCESS, "Task finished").build()
         return Result.success(data1)
     }

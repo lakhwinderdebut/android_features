@@ -16,14 +16,11 @@ import androidx.work.WorkerParameters
  * we can also pass data to worker class and send data back once process is completed
  */
 class MyWorker(context: Context, workerParams: WorkerParameters) : Worker(context, workerParams) {
-    companion object {
-        var SUCCESS = "Success"
-    }
 
     override fun doWork(): Result {
         val data = inputData
-        data.getString(Constants.TITLE)?.let { displayNotification(it, "work is finished") }
-        val data1 = Data.Builder().putString(SUCCESS, "Task finished").build()
+        data.getString(Constants.TITLE)?.let { displayNotification(it, "Work is finished") }
+        val data1 = Data.Builder().putString(Constants.SUCCESS, "Task finished").build()
         return Result.success(data1)
     }
 

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">AndroidFeatures</string>
+    <string name="work_manager">Work Manager</string>
+    <string name="motion_layout">Motion Layout</string>
+    <string name="room">Room</string>
+    <string name="coroutines">Coroutines</string>
+    <string name="gallery_view">Gallery view</string>
+    <string name="instant_apps">Instant Apps</string>
+    <string name="auto_fill">Auto Fill</string>
+    <string name="setting_panel">Setting panel</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="unified_biometrics">Unified Biometrics</string>
+    <string name="android_slices">Android Slices</string>
+    <string name="download_manager">Download Manager</string>
+    <string name="content_provider">content provider</string>
 </resources>

@@ -31,7 +31,7 @@ class ActivityWorkManager : AppCompatActivity() {
         WorkManager.getInstance(this).getWorkInfoByIdLiveData(oneTimeWorkRequest.id)
             .observe(this, Observer<WorkInfo> {
                 Log.e("work states", "${it.state}")
-                Log.e("Output  data", "${it.outputData.getString(MyWorker.SUCCESS)}")
+                Log.e("Output  data", "${it.outputData.getString(Constants.SUCCESS)}")
             })
     }
 }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/mainFragment"
+            android:id="@+id/nav_graph">
+
+
+    <fragment android:id="@+id/mainFragment"
+              android:name="com.debut.androidfeatures.jetPackNavigation.MainFragment"
+              android:label="MainFragment">
+        <action android:id="@+id/action_mainFragment_to_AFragment"
+                app:destination="@id/AFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
+        <action android:id="@+id/action_mainFragment_to_BFragment"
+                app:destination="@id/BFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
+    </fragment>
+
+    <fragment android:id="@+id/AFragment"
+              android:name="com.debut.androidfeatures.jetPackNavigation.AFragment"
+              android:label="AFragment"
+    >
+        <action android:id="@+id/action_AFragment_to_CFragment"
+                app:destination="@id/CFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popUpTo="@id/mainFragment"
+                app:popUpToInclusive="true"
+        />
+
+    </fragment>
+
+    <fragment android:id="@+id/BFragment"
+              android:name="com.debut.androidfeatures.jetPackNavigation.BFragment"
+              android:label="BFragment">
+        <action android:id="@+id/action_BFragment_to_CFragment"
+                app:destination="@id/CFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popUpTo="@id/mainFragment"
+                app:popUpToInclusive="true"
+
+        />
+    </fragment>
+
+    <fragment android:id="@+id/CFragment"
+              android:name="com.debut.androidfeatures.jetPackNavigation.CFragment"
+              android:label="CFragment"
+              app:popEnterAnim="@anim/slide_in_left"
+              app:popExitAnim="@anim/slide_out_right"
+              app:enterAnim="@anim/slide_in_right"
+              app:exitAnim="@anim/slide_out_left"
+
+    />
+
+</navigation>

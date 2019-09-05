@@ -30,7 +30,7 @@ public class InitApplication extends Application {
         this.isNightModeEnabled = mPrefs.getBoolean(NIGHT_MODE, false);
     }
 
-    public boolean isNightModeEnabled() {
+    public boolean isNightModeEnabled()   {
         return isNightModeEnabled;
     }
 

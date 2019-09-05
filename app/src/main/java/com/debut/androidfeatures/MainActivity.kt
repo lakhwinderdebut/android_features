@@ -3,6 +3,7 @@ package com.debut.androidfeatures
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.debut.androidfeatures.jetPackNavigation.JetPackActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -25,5 +26,10 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this,NightThemeActivity::class.java)
             startActivity(intent)
         }
+
+        btn_jetpack_navigation.setOnClickListener {
+            startActivity(Intent(this, JetPackActivity::class.java))
+        }
+
     }
 }

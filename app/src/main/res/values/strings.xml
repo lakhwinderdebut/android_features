@@ -13,4 +13,5 @@
     <string name="android_slices">Android Slices</string>
     <string name="download_manager">Download Manager</string>
     <string name="content_provider">content provider</string>
+    <string name="recycler_view_component">Recycler View Component</string>
 </resources>

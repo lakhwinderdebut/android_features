@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.debut.androidfeatures.jetPackNavigation.JetPackActivity
+import com.debut.androidfeatures.recycleViewSample.ActivityRecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -31,5 +32,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, JetPackActivity::class.java))
         }
 
+        btn_motion_layout.setOnClickListener {
+            startActivity(Intent(this, ActivityRecyclerView::class.java))
+        }
+
     }
+
+
 }
